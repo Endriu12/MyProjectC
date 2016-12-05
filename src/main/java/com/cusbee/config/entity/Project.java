@@ -1,5 +1,6 @@
 package com.cusbee.config.entity;
 
+import com.cusbee.config.entity.enums.ProjectStatus;
 import lombok.Getter;
 import lombok.Setter;
 
@@ -28,5 +29,7 @@ public class Project {
     @Column(name = "deadline")
     private Date deadline;
 
+    @Column(name = "projectStatus")
+    private ProjectStatus projectStatus;
 
 }

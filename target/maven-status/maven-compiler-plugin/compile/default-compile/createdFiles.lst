@@ -6,8 +6,10 @@ com\cusbee\config\utils\ErrorCodes$Developer.class
 com\cusbee\config\service\AccountService.class
 com\cusbee\config\serviceIMPL\AccountServiceIMPL.class
 com\cusbee\config\controller\TaskController.class
+com\cusbee\config\entity\enums\ProjectStatus.class
 com\cusbee\config\serviceIMPL\ProjectServiceIMPL.class
 com\cusbee\config\exception\Issues.class
+com\cusbee\config\dto\ProjectDto.class
 com\cusbee\config\repository\TaskRepository.class
 com\cusbee\config\entity\Account.class
 com\cusbee\config\exception\ApplicationException.class
@@ -20,6 +22,7 @@ com\cusbee\config\serviceIMPL\TaskServiceIMPL.class
 com\cusbee\config\repository\ProjectRepository.class
 com\cusbee\config\exception\Issue.class
 com\cusbee\config\service\ProjectService.class
+com\cusbee\config\entity\enums\EmploymentType.class
 com\cusbee\config\entity\Project.class
 com\cusbee\config\controller\ProjectController.class
 com\cusbee\config\utils\ErrorCodes$Common.class
@@ -28,4 +31,5 @@ com\cusbee\config\controller\AccountController.class
 com\cusbee\config\exception\BaseException.class
 com\cusbee\config\dto\AccountDto.class
 com\cusbee\config\service\TaskService.class
+com\cusbee\config\entity\enums\TaskStatus.class
 com\cusbee\config\ServletInitializer.class

@@ -5,9 +5,8 @@ import com.cusbee.config.repository.ProjectRepository;
 import com.cusbee.config.serviceIMPL.ProjectServiceIMPL;
 import io.swagger.annotations.ApiOperation;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RequestMethod;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
+
 
 import java.util.List;
 
@@ -23,7 +22,7 @@ public class ProjectController {
     private ProjectRepository projectRepository;
 
     @Autowired
-    private ProjectServiceIMPL  projectServiceIMPL;
+    private ProjectServiceIMPL projectServiceIMPL;
 
 
     @ApiOperation(value = "I dont know what it is")
@@ -36,9 +35,10 @@ public class ProjectController {
     //всі значення проекту, треба DTO створювати чи як?
 
     @ApiOperation(value = "method add new Project")
-    @RequestMapping(value = "add_project", method = RequestMethod.POST)
-    public Project addProjet() {
-        Project  project = new Project();
-        return projectServiceIMPL.addProjet(project);
+    @RequestMapping(value = "addproject", method = RequestMethod.POST)
+    public Project save(@RequestBody Project project1) {
+        return  projectServiceIMPL.addProjet(project1);
     }
 }
+
+
